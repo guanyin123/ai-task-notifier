@@ -1,0 +1,51 @@
+{
+  "name": "ai-task-notifier",
+  "version": "1.0.0",
+  "description": "Claude Code 单轮回复完成提醒工具",
+  "type": "module",
+  "bin": {
+    "ai-task-notifier": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "dev": "tsx src/index.ts",
+    "pack:local": "npm pack",
+    "probe": "tsx scripts/probe-claude-stream.ts",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm test && npm run build"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guanyin123/ai-task-notifier.git"
+  },
+  "keywords": [
+    "claude-code",
+    "notification",
+    "cli",
+    "macos"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guanyin123/ai-task-notifier/issues"
+  },
+  "homepage": "https://github.com/guanyin123/ai-task-notifier#readme",
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.3",
+    "vitest": "^4.1.4"
+  }
+}

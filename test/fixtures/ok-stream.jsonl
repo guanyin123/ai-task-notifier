@@ -1,0 +1,11 @@
+{"type":"system","subtype":"status","status":"requesting","uuid":"1","session_id":"session-1"}
+{"type":"stream_event","event":{"type":"message_start","message":{"id":"msg_tool","type":"message","role":"assistant","content":[],"model":"gpt-5.4","stop_reason":null,"stop_sequence":null,"usage":{"input_tokens":0,"output_tokens":0}}},"session_id":"session-1","uuid":"2"}
+{"type":"stream_event","event":{"type":"content_block_start","index":0,"content_block":{"type":"tool_use","id":"tool-1","name":"Skill","input":{}}},"session_id":"session-1","uuid":"3"}
+{"type":"assistant","message":{"id":"msg_tool","type":"message","role":"assistant","content":[{"type":"tool_use","id":"tool-1","name":"Skill","input":{"skill":"superpowers:using-superpowers","args":""}}],"model":"gpt-5.4","stop_reason":null,"stop_sequence":null,"usage":{"input_tokens":0,"output_tokens":0}},"session_id":"session-1","uuid":"4"}
+{"type":"stream_event","event":{"type":"message_stop"},"session_id":"session-1","uuid":"5"}
+{"type":"stream_event","event":{"type":"message_start","message":{"id":"msg_text","type":"message","role":"assistant","content":[],"model":"gpt-5.4","stop_reason":null,"stop_sequence":null,"usage":{"input_tokens":0,"output_tokens":0}}},"session_id":"session-1","uuid":"6"}
+{"type":"stream_event","event":{"type":"content_block_start","index":0,"content_block":{"type":"text","text":""}},"session_id":"session-1","uuid":"7"}
+{"type":"stream_event","event":{"type":"content_block_delta","index":0,"delta":{"type":"text_delta","text":"OK"}},"session_id":"session-1","uuid":"8"}
+{"type":"assistant","message":{"id":"msg_text","type":"message","role":"assistant","content":[{"type":"text","text":"OK"}],"model":"gpt-5.4","stop_reason":null,"stop_sequence":null,"usage":{"input_tokens":0,"output_tokens":0}},"session_id":"session-1","uuid":"9"}
+{"type":"stream_event","event":{"type":"message_stop"},"session_id":"session-1","uuid":"10"}
+{"type":"result","subtype":"success","is_error":false,"duration_ms":11494,"num_turns":3,"result":"OK","stop_reason":"end_turn","session_id":"session-1","uuid":"11"}

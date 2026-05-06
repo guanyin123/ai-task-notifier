@@ -1,0 +1,11 @@
+src/
+test/
+scripts/
+.ai-task-notifier/
+findings.md
+progress.md
+task_plan.md
+tsconfig.json
+tsconfig.build.json
+vitest.config.*
+*.log
